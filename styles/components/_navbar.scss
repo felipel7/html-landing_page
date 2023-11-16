@@ -1,0 +1,31 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.header {
+  border-bottom: $dark-border;
+
+  @include flex-center;
+}
+
+.nav {
+  flex: 1;
+  max-width: $main-content-width;
+  padding-block: 2.5rem;
+  padding-inline: 2vw;
+
+  @include flex-center($justify: space-between);
+}
+
+.menu {
+  list-style: none;
+
+  @include flex-center;
+
+  li {
+    padding: 1rem;
+
+    & ~ li {
+      margin-left: 1.5rem;
+    }
+  }
+}

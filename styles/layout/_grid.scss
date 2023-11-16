@@ -1,0 +1,14 @@
+@import '../utils/variables';
+
+body {
+  display: grid;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr $main-content-width 1fr;
+}
+
+main > * {
+  grid-column: 2;
+}

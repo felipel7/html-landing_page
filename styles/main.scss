@@ -1,0 +1,10 @@
+@import 'utils/variables';
+@import 'base/reset';
+@import 'base/typography';
+@import 'layout/grid';
+@import 'components/navbar';
+
+body {
+  background-color: $dark-bg-main;
+  color: $dark-text-color;
+}
