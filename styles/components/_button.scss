@@ -1,0 +1,29 @@
+@import '../utils/variables';
+
+.btn {
+  all: unset;
+  border-radius: 3.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 2.5rem;
+  text-transform: capitalize;
+  transition: filter ease-in-out 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.btn-outline {
+  background: linear-gradient(
+    25deg,
+    rgba($dark-border-color, 0.52) 10%,
+    rgba($dark-border-color, 0.08) 50%,
+    rgba($dark-border-color, 0.42) 90%
+  );
+  border: $dark-border-button;
+}
