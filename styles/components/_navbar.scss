@@ -11,21 +11,19 @@
   flex: 1;
   max-width: $main-content-width;
   padding-block: 2.5rem;
-  padding-inline: 2vw;
+  padding-inline: $padding-inline-default;
 
   @include flex-center($justify: space-between);
 }
 
 .menu {
-  list-style: none;
-
   @include flex-center;
 
   li {
     padding: 1rem;
 
     & ~ li {
-      margin-left: 1.5rem;
+      margin-inline-start: 1.5rem;
     }
   }
 }

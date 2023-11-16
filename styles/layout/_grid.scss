@@ -6,7 +6,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr $main-content-width 1fr;
+  grid-template-columns: 1fr minmax(auto, $main-content-width) 1fr;
 }
 
 main > * {

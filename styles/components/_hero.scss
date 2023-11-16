@@ -1,0 +1,23 @@
+@import '../utils/mixins';
+
+.section {
+  text-align: center;
+
+  hgroup {
+    @include flex-center;
+
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-block-end: 3rem;
+
+    p {
+      max-width: 80rem;
+    }
+  }
+
+  picture {
+    display: block;
+    margin: 5rem auto;
+    width: fit-content;
+  }
+}

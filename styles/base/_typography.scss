@@ -3,5 +3,16 @@ html {
 }
 
 body {
+  font-family: Satoshi, sans-serif;
   font-size: 1.5rem;
+}
+
+h2 {
+  font-size: clamp(2.6rem, (0.5rem + 4.25vw), 6rem);
+  line-height: 1.2;
+}
+
+p {
+  font-size: clamp(1.4rem, (0.5rem + 1.75vw), 1.8rem);
+  line-height: 1.5;
 }

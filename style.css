@@ -1,3 +1,9 @@
+/* Color Palette */
+/* Body Styles */
+/* Layout Configuration */
+/* Navigation Bar */
+/* Buttons */
+/* Sizes and Spacing */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,28 +15,66 @@ html {
 }
 
 body {
+  font-family: Satoshi, sans-serif;
   font-size: 1.5rem;
 }
 
+h2 {
+  font-size: clamp(2.6rem, 0.5rem + 4.25vw, 6rem);
+  line-height: 1.2;
+}
+
+p {
+  font-size: clamp(1.4rem, 0.5rem + 1.75vw, 1.8rem);
+  line-height: 1.5;
+}
+
+/* Color Palette */
+/* Body Styles */
+/* Layout Configuration */
+/* Navigation Bar */
+/* Buttons */
+/* Sizes and Spacing */
+section {
+  padding-block: 7rem;
+  padding-inline: 2vw;
+}
+
+ul,
+menu {
+  list-style: none;
+}
+
+/* Color Palette */
+/* Body Styles */
+/* Layout Configuration */
+/* Navigation Bar */
+/* Buttons */
+/* Sizes and Spacing */
 body {
   display: grid;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1280px 1fr;
+  grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
 }
 
 main > * {
   grid-column: 2;
 }
 
+/* Color Palette */
+/* Body Styles */
+/* Layout Configuration */
+/* Navigation Bar */
+/* Buttons */
+/* Sizes and Spacing */
 .header {
   border-bottom: 1px solid #151934;
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 0;
   justify-content: center;
 }
 
@@ -42,23 +86,69 @@ main > * {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 0;
   justify-content: space-between;
 }
 
 .menu {
-  list-style: none;
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 0;
   justify-content: center;
 }
 .menu li {
   padding: 1rem;
 }
 .menu li ~ li {
-  margin-left: 1.5rem;
+  margin-inline-start: 1.5rem;
+}
+
+.section {
+  text-align: center;
+}
+.section hgroup {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-block-end: 3rem;
+}
+.section hgroup p {
+  max-width: 80rem;
+}
+.section picture {
+  display: block;
+  margin: 5rem auto;
+  width: fit-content;
+}
+
+/* Color Palette */
+/* Body Styles */
+/* Layout Configuration */
+/* Navigation Bar */
+/* Buttons */
+/* Sizes and Spacing */
+.btn {
+  all: unset;
+  border-radius: 3.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 2.5rem;
+  text-transform: capitalize;
+  transition: filter ease-in-out 0.2s;
+}
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn-primary {
+  background-color: #7214ff;
+}
+
+.btn-outline {
+  background: linear-gradient(25deg, rgba(21, 25, 52, 0.52) 10%, rgba(21, 25, 52, 0.08) 50%, rgba(21, 25, 52, 0.42) 90%);
+  border: 1px solid #282d45;
 }
 
 body {

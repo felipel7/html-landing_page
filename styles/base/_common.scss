@@ -1,0 +1,11 @@
+@import '../utils/variables';
+
+section {
+  padding-block: 7rem;
+  padding-inline: $padding-inline-default;
+}
+
+ul,
+menu {
+  list-style: none;
+}
