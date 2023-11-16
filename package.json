@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch --no-source-map style.scss style.css"
+    "sass": "sass --watch --no-source-map styles/main.scss style.css",
+    "lint": "stylelint 'styles/**/*.scss' --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.3.1"
   }
 }
