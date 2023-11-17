@@ -1,0 +1,28 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.card {
+  background-color: $dark-bg-card;
+  border: $dark-border-button;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 30rem;
+  overflow: hidden;
+  padding: 3rem 4rem;
+  text-align: left;
+
+  figure {
+    img {
+      height: 4.5rem;
+      width: 5rem;
+    }
+
+    figcaption {
+      margin-block: 2.8rem 1.2rem;
+    }
+  }
+
+  p {
+    word-break: break-all;
+  }
+}
