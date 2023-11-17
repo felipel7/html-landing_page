@@ -23,6 +23,16 @@ h3 {
   line-height: 1.1;
 }
 
+h5 {
+  font-size: clamp(2.1rem, 0.5rem + 3vw, 3.2rem);
+  line-height: 1.25;
+}
+
+h6 {
+  font-size: clamp(1.75rem, 0.5rem + 3vw, 2.4rem);
+  line-height: 1.4;
+}
+
 p {
   font-size: clamp(1.4rem, 0.5rem + 1.75vw, 1.8rem);
   line-height: 1.5;
@@ -115,11 +125,11 @@ menu {
   padding: 3rem 4rem;
   text-align: left;
 }
-.card figure img {
+.card header img {
   height: 4.5rem;
   width: 5rem;
 }
-.card figure figcaption {
+.card header h6 {
   margin-block: 2.8rem 1.2rem;
 }
 .card p {
@@ -185,11 +195,6 @@ menu {
   width: fit-content;
 }
 
-/* Color Palette */
-/* Body Styles */
-/* Layout Configuration */
-/* Borders */
-/* Sizes and Spacing */
 .section.media-section {
   align-items: center;
   display: flex;
@@ -217,6 +222,129 @@ menu {
   .section.media-section hgroup p {
     flex-basis: 35%;
   }
+}
+
+.section.showcase-section {
+  text-align: center;
+}
+.section.showcase-section h3 {
+  line-height: 1.2;
+  margin-block-start: 0.75rem;
+}
+@media screen and (width >= 860px) {
+  .section.showcase-section h3 {
+    margin-block-start: 1.75rem;
+  }
+}
+.section.showcase-section h3 span {
+  white-space: nowrap;
+}
+.section.showcase-section h3 span img {
+  height: clamp(1.65rem, 0.5rem + 2vw, 3rem);
+}
+
+.card.article-invitation {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 2.8rem;
+  height: 50rem;
+  margin-block: 6rem 4rem;
+  padding: 0;
+  position: relative;
+}
+.card.article-invitation::before {
+  background: linear-gradient(55deg, rgba(114, 20, 255, 0.1) 0%, transparent 30%, transparent 50%, rgba(50, 202, 253, 0.15) 100%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.card.article-invitation header {
+  padding-inline: 7rem 4rem;
+}
+.card.article-invitation picture {
+  padding: 7rem 7rem 7rem 0;
+}
+.card.article-invitation hgroup p {
+  margin-block: 1.5rem 3.5rem;
+  word-break: normal;
+}
+@media screen and (width < 1200px) {
+  .card.article-invitation {
+    flex-wrap: wrap;
+    gap: 0;
+    height: fit-content;
+  }
+  .card.article-invitation header,
+  .card.article-invitation picture {
+    padding: 7rem 7rem 0;
+    text-align: center;
+  }
+}
+
+.section.showcase-section div {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  margin-block-end: 6rem;
+}
+@media screen and (width >= 1200px) {
+  .section.showcase-section div {
+    grid-template-columns: minmax(auto, 500px) 1fr;
+  }
+}
+.section.showcase-section div .article-mobile,
+.section.showcase-section div .article-upload {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 1.5rem;
+  height: 100%;
+  padding: 5rem 5.5rem;
+  position: relative;
+}
+.section.showcase-section div .article-mobile p,
+.section.showcase-section div .article-upload p {
+  text-align: center;
+  font-size: 1.68rem;
+}
+@media screen and (width >= 1200px) {
+  .section.showcase-section div .article-mobile h5,
+  .section.showcase-section div .article-upload h5 {
+    align-self: flex-start;
+  }
+  .section.showcase-section div .article-mobile p,
+  .section.showcase-section div .article-upload p {
+    text-align: left;
+    word-break: keep-all;
+  }
+}
+.section.showcase-section div .article-mobile::after,
+.section.showcase-section div .article-upload::after {
+  background: radial-gradient(circle at 0% 100%, rgba(114, 20, 255, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(65, 232, 141, 0.12) 0%, transparent 40%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.section.showcase-section div .article-mobile img {
+  margin-block-end: 2rem;
+}
+.section.showcase-section div .article-upload {
+  padding-block-end: 0;
+}
+.section.showcase-section div .article-upload img {
+  order: 2;
+  width: 100%;
+  max-width: 58rem;
+}
+.section.showcase-section div .article-upload::after {
+  background: radial-gradient(circle at 0% 100%, rgba(45, 85, 251, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(114, 20, 255, 0.15) 0%, transparent 30%);
 }
 
 body {

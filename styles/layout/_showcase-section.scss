@@ -1,0 +1,154 @@
+.section.showcase-section {
+  text-align: center;
+
+  h3 {
+    line-height: 1.2;
+    margin-block-start: 0.75rem;
+
+    @media screen and (width >= 860px) {
+      margin-block-start: 1.75rem;
+    }
+
+    span {
+      white-space: nowrap;
+
+      img {
+        height: clamp(1.65rem, (0.5rem + 2vw), 3rem);
+      }
+    }
+  }
+}
+
+.card.article-invitation {
+  @include flex-center;
+
+  border-radius: 10px;
+  gap: 2.8rem;
+  height: 50rem;
+  margin-block: 6rem 4rem;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    background: linear-gradient(
+      55deg,
+      rgba($primary-color, 0.1) 0%,
+      transparent 30%,
+      transparent 50%,
+      rgba($secondary-color, 0.15) 100%
+    );
+    content: '';
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  header {
+    padding-inline: 7rem 4rem;
+  }
+
+  picture {
+    padding: 7rem 7rem 7rem 0;
+  }
+
+  hgroup {
+    p {
+      margin-block: 1.5rem 3.5rem;
+      word-break: normal;
+    }
+  }
+
+  @media screen and (width < 1200px) {
+    flex-wrap: wrap;
+    gap: 0;
+    height: fit-content;
+
+    header,
+    picture {
+      padding: 7rem 7rem 0;
+      text-align: center;
+    }
+  }
+}
+
+.section.showcase-section div {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  margin-block-end: 6rem;
+
+  @media screen and (width >= 1200px) {
+    grid-template-columns: minmax(auto, 500px) 1fr;
+  }
+
+  .article-mobile,
+  .article-upload {
+    @include flex-center(column, space-between);
+
+    border-radius: 10px;
+    gap: 1.5rem;
+    height: 100%;
+    padding: 5rem 5.5rem;
+    position: relative;
+
+    p {
+      font-size: 1.68rem;
+      text-align: center;
+    }
+
+    @media screen and (width >= 1200px) {
+      h5 {
+        align-self: flex-start;
+      }
+
+      p {
+        text-align: left;
+        word-break: keep-all;
+      }
+    }
+
+    &::after {
+      background: radial-gradient(
+          circle at 0% 100%,
+          rgba($primary-color, 0.15) 0%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba($success-color, 0.12) 0%,
+          transparent 40%
+        );
+      content: '';
+      inset: 0;
+      pointer-events: none;
+      position: absolute;
+    }
+  }
+
+  .article-mobile img {
+    margin-block-end: 2rem;
+  }
+
+  .article-upload {
+    padding-block-end: 0;
+
+    img {
+      max-width: 58rem;
+      order: 2;
+      width: 100%;
+    }
+
+    &::after {
+      background: radial-gradient(
+          circle at 0% 100%,
+          rgba(#2d55fb, 0.15) 0%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba($primary-color, 0.15) 0%,
+          transparent 30%
+        );
+    }
+  }
+}

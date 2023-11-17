@@ -1,16 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://fonts.cdnfonts.com/css/satoshi?styles=135005,135007,135002"
       rel="stylesheet"
-    />
+    >
     <title>SasS Landing Page</title>
   </head>
   <body>
-    <main></main>
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="nav">
+        <h1>brand logo</h1>
+        <menu class="menu">
+          <li>link 1</li>
+          <li>link 2</li>
+          <li>link 3</li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Block -->
+      <section class="section hero-section">
+        <hgroup>
+          <h2>A CRM dashboard for engineering teams</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Gravida convallis orci
+            ultrices non. Ultricies tempor at ut cursus mi. Aliquam sed amet
+            vitae orci ac penatibus consectetur.
+          </p>
+        </hgroup>
+
+        <button type="button" class="btn btn-primary">Get a demo</button>
+        <button type="button" class="btn btn-outline">view pricing</button>
+
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 513px) 100vw, 513px"
+            srcset="
+              assets/hero_hvf4nj_ar_1_1,c_fill,g_auto__c_scale,w_190.png 190w,
+              assets/hero_hvf4nj_ar_1_1,c_fill,g_auto__c_scale,w_513.png 513w
+            "
+          >
+          <source
+            media="(min-width: 768px) and (max-width: 991px)"
+            sizes="(max-width: 1154px) 70vw, 808px"
+            srcset="
+              assets/hero_hvf4nj_c_scale,w_538.png 538w,
+              assets/hero_hvf4nj_c_scale,w_808.png 808w
+            "
+          >
+          <source
+            media="(min-width: 992px) and (max-width: 1199px)"
+            sizes="(max-width: 1347px) 60vw, 808px"
+            srcset="
+              assets/hero_hvf4nj_c_scale,w_596.png 596w,
+              assets/hero_hvf4nj_c_scale,w_808.png 808w
+            "
+          >
+          <img
+            sizes="(max-width: 2020px) 40vw, 808px"
+            srcset="
+              assets/hero_hvf4nj_c_scale,w_480.png 480w,
+              assets/hero_hvf4nj_c_scale,w_808.png 808w
+            "
+            src="assets/hero_hvf4nj_c_scale,w_808.png"
+            alt=""
+          >
+        </picture>
+      </section>
+
+      <!-- Media Block -->
+      <section class="section media-section">
+        <hgroup>
+          <h3>Powerful features to help you manage all your leads</h3>
+          <p>
+            Ipsum dolor sit amet consectetur. Aliquam elementum elementum in
+            ultrices. Dui maecenas ut eros turpis ultrices metus morbi aliquet
+            vel.
+          </p>
+        </hgroup>
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/user.svg" alt="user" />
+            <h6>User information</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+        
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/deal.svg" alt="deal">
+            <h6>Deal tracking</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/pipeline.svg" alt="pipeline">
+            <h6>Pipeline oversight</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/report.svg" alt="report">
+            <h6>Reporting panel</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/meeting.svg" alt="meeting">
+            <h6>Meeting scheduler</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+
+        <article class="card">
+          <header>
+            <img src="assets/icons/email.svg" alt="email">
+            <h6>Email tracking</h6>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur turpis tristique nulla posuere amet
+            arcu dictum ultricies convallis.
+          </p>
+        </article>
+      </section>
+
+      <!-- Showcase Block -->
+      <section class="section showcase-section">
+        <h2>Essential apps that protect your</h2>
+        <h3>
+          <span>
+            <img src="./assets/icons/mail.svg" alt="email">
+            Email,
+          </span>
+          <span>
+            <img src="./assets/icons/calendar.svg" alt="events">
+            Events,
+          </span>
+          <span>
+            <img src="./assets/icons/folder.svg" alt="files">
+            Files,
+          </span>
+          <span>
+            <img src="./assets/icons/document.svg" alt="documents">
+            Documents
+          </span>
+        </h3>
+
+        <article class="card article-invitation">
+          <header>
+            <hgroup>
+              <h5>End-to-end encrypted inbox and messages</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Proin dignissim tortor
+                mauris viverra sed volutpat mauris. Amet nisi amet commodo
+                adipiscing ut imperdiet nunc.
+              </p>
+            </hgroup>
+            <button type="button" class="btn btn-outline">Learn more</button>
+          </header>
+
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              sizes="(max-width: 515px) 100vw, 515px"
+              srcset="
+                assets/invitation_a7e1bv_c_scale,w_190.png 190w,
+                assets/invitation_a7e1bv_c_scale,w_515.png 515w
+              "
+            >
+            <source
+              media="(min-width: 768px) and (max-width: 991px)"
+              sizes="(max-width: 515px) 100vw, 515px"
+              srcset="assets/invitation_a7e1bv_c_scale,w_515.png 515w"
+            >
+            <source
+              media="(min-width: 992px) and (max-width: 1199px)"
+              sizes="(max-width: 515px) 100vw, 515px"
+              srcset="assets/invitation_a7e1bv_c_scale,w_515.png 515w"
+            >
+            <img
+              sizes="(max-width: 515px) 100vw, 515px"
+              srcset="assets/invitation_a7e1bv_c_scale,w_515.png 515w"
+              src="assets/invitation_a7e1bv_c_scale,w_515.png"
+              alt="invitation"
+            >
+          </picture>
+        </article>
+      
+        <div>
+          <article class='card article-mobile'>
+            <img src='assets/phone.png' alt='phone'>
+            <h5>Mobile applications</h5>
+            <p>Lorem ipsum dolor sit amet consectetur. Viverra sed dignissim risus aliquet condimentum. Vulputate varius feugiat egestas congue</p>
+          </article>
+          <article class='card article-upload'>
+            <img src='assets/table.png' alt='table'>
+            <h5>Upload, share, and preview any file</h5>
+            <p>Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula massa netus nulla ultricies purus.</p>
+          </article>
+        </div>
+
+        <button type="button" class="btn btn-primary">Get a started</button>
+        <button type="button" class="btn btn-outline">Browse all feature</button>
+      </section>
+    </main>
   </body>
 </html>
