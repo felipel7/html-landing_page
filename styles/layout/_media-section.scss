@@ -1,0 +1,29 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.section.media-section {
+  @include flex-center($justify: start);
+
+  flex-wrap: wrap;
+  gap: 2.4rem;
+
+  hgroup {
+    @include flex-center;
+
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding-block-end: 4.5rem;
+
+    @media screen and (width >= 868px) {
+      flex-wrap: nowrap;
+
+      h3 {
+        flex-basis: 65%;
+      }
+
+      p {
+        flex-basis: 35%;
+      }
+    }
+  }
+}

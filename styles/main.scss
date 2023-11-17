@@ -1,13 +1,17 @@
-@import 'utils/variables';
 @import 'base/reset';
 @import 'base/typography';
-@import 'base/common';
 @import 'layout/grid';
+@import 'utils/variables';
+@import 'base/common';
 
-// Components
-@import 'components/navbar';
-@import 'components/hero';
+/* Components */
 @import 'components/button';
+@import 'components/card';
+@import 'components/navbar';
+
+/* Sections */
+@import 'layout/hero-section';
+@import 'layout/media-section';
 
 body {
   background-color: $dark-bg-main;
