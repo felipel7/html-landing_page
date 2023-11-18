@@ -59,7 +59,7 @@
     .card {
       @include flex-center(column);
 
-      background-color: #060b27;
+      background-color: $dark-bg-main;
       border-radius: 10px;
       gap: 3.2rem;
       max-width: 54rem;

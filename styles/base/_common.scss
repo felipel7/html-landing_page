@@ -9,3 +9,13 @@ ul,
 menu {
   list-style: none;
 }
+
+.full-bleed {
+  grid-column: 1 / span 3;
+}
+
+#prev {
+  img {
+    transform: scaleX(-1);
+  }
+}

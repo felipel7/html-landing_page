@@ -87,7 +87,7 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/user.svg" alt="user" />
+            <img src="assets/icons/user.svg" alt="user">
             <h6>User information</h6>
           </header>
           <p>
@@ -301,6 +301,98 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonial Block -->
+      <section class='section testimonial-section full-bleed'>
+        <hgroup>
+          <h2>What our clients say</h2>
+          <p>
+            Rmet facilisi arcu odio urna aenean erat. 
+            Pellentesque in vitae lobortis orci tincidunt facilisis. 
+            Pulvinar lacus ultricies turpis urna sapien.
+          </p>
+        </hgroup>
+
+        <div class='quotes-container'>
+          <blockquote class='card'>
+            <header>
+              <img src='assets/avatar/avatar-cameron.png' alt='Cameron Williamson'>
+              <div>
+                <p>Cameron Williamson<small>Web Designer</small></p>
+                <img src='assets/icons/quote.svg' alt='quote mark'>
+              </div>
+            </header>
+            <q>
+              Lorem ipsum dolor sit amet consectetur. 
+              Ac quam sem mi nibh volutpat enim pellentesque. 
+              Proin iaculis nisl et neque sed fermentum sollicitudin lectus. 
+            </q>
+          </blockquote>
+          <blockquote class='card'>
+            <header>
+              <img src='assets/avatar/avatar-esther.png' alt='Esther Howard'>
+              <div>
+                <p>Esther Howard<small>Web Developer</small></p>
+                <img src='assets/icons/quote.svg' alt='quote mark'>
+              </div>
+            </header>
+            <q>
+              At viverra enim enim sed turpis orci cursus. 
+              Imperdiet eros mauris sed sodales nisi interdum ac. 
+              Eu congue quis egestas donec lectus
+            </q>
+          </blockquote>
+          <blockquote class='card'>
+            <header>
+              <img src='assets/avatar/avatar-jenny.png' alt='Jenny Wilson'>
+              <div>
+                <p>Jenny Wilson<small>UI/UX Designer</small></p>
+                <img src='assets/icons/quote.svg' alt='quote mark'>
+              </div>
+            </header>
+            <q>
+              Sed ut diam amet accumsan in. 
+              Elementum lorem aliquam venenatis amet sit posuere sed sit. 
+              Aliquet suspendisse vitae placerat donec.
+            </q>
+          </blockquote>
+        </div>
+        <p class='buttons-container'>
+          <button type='button' id='prev' class="btn btn-outline btn-control">
+            <img src='assets/icons/arrow.svg' alt='arrow'>
+          </button>
+          <button type='button' id='next' class="btn btn-outline btn-control">
+            <img src='assets/icons/arrow.svg' alt='arrow'>
+          </button>
+        </p>
+      </section>
     </main>
+    <script>
+      const prevButton = document.getElementById('prev');
+      const nextButton = document.getElementById('next');
+      const cards = document.querySelectorAll('.quotes-container .card');
+  
+      let currentIndex = 0;
+  
+      prevButton.addEventListener('click', () => {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        cards[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        updateButtonsState();
+      });
+  
+      nextButton.addEventListener('click', () => {
+        currentIndex = Math.min(currentIndex + 1, cards.length - 1);
+        cards[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        updateButtonsState();
+      });
+  
+      function updateButtonsState() {
+        prevButton.disabled = currentIndex === 0;
+  
+        nextButton.disabled = currentIndex === cards.length - 1;
+      }
+  
+      updateButtonsState();
+    </script>
   </body>
 </html>
