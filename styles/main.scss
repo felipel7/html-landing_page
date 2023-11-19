@@ -10,10 +10,11 @@
 @import 'components/navbar';
 
 /* Sections */
+@import 'layout/discord-section';
+@import 'layout/features-section';
 @import 'layout/hero-section';
 @import 'layout/media-section';
 @import 'layout/showcase-section';
-@import 'layout/features-section';
 @import 'layout/testimonial-section';
 
 body {
