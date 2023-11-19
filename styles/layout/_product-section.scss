@@ -1,0 +1,61 @@
+.section.product-section {
+  @include flex-center(row, space-between);
+
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding-block-end: 14rem;
+
+  .products-container {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+
+    @include flex-center;
+  }
+
+  .product-card {
+    @include flex-center(column);
+
+    border-radius: 1rem;
+    gap: 2rem;
+    max-width: 40rem;
+    min-width: 35rem;
+    padding: 2.5rem;
+
+    hgroup {
+      @include flex-center(column);
+
+      gap: 1.5rem;
+
+      h6 {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+
+      p {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        word-break: keep-all;
+      }
+    }
+
+    img {
+      height: 23rem;
+      order: -1;
+      width: 34.2rem;
+    }
+
+    footer {
+      border-block-start: $dark-border;
+      margin-inline-end: auto;
+      padding-block-start: 2rem;
+      width: calc(100% - 15px);
+
+      @include flex-center(row, space-between);
+    }
+  }
+}

@@ -7,8 +7,9 @@
   gap: 1.5rem;
   height: 45rem;
   margin: 7rem auto;
+  max-width: 100rem;
   position: relative;
-  width: 100rem;
+  width: 100%;
 
   @include flex-center(column);
 

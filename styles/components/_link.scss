@@ -1,0 +1,15 @@
+.link-arrow {
+  font-weight: bold;
+  position: relative;
+
+  &::after {
+    content: '→';
+    margin-left: 5px;
+    position: absolute;
+    transition: margin 0.15s;
+  }
+
+  &:hover::after {
+    margin-left: 10px;
+  }
+}

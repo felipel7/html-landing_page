@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -89,6 +90,11 @@ menu {
 
 #prev img {
   transform: scaleX(-1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Components */
@@ -193,6 +199,20 @@ menu {
   margin-inline-start: 1.5rem;
 }
 
+.link-arrow {
+  font-weight: bold;
+  position: relative;
+}
+.link-arrow::after {
+  content: "→";
+  margin-left: 5px;
+  position: absolute;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
 /* Sections */
 .section.discord-section {
   background-image: url("../../assets/discord/bg.svg");
@@ -203,8 +223,9 @@ menu {
   gap: 1.5rem;
   height: 45rem;
   margin: 7rem auto;
+  max-width: 100rem;
   position: relative;
-  width: 100rem;
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -361,6 +382,71 @@ menu {
   .section.media-section hgroup p {
     flex-basis: 35%;
   }
+}
+
+.section.product-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding-block-end: 14rem;
+}
+.section.product-section .products-container {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section.product-section .product-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 2rem;
+  max-width: 40rem;
+  min-width: 35rem;
+  padding: 2.5rem;
+}
+.section.product-section .product-card hgroup {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.section.product-section .product-card hgroup h6 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.section.product-section .product-card hgroup p {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  word-break: keep-all;
+}
+.section.product-section .product-card img {
+  height: 23rem;
+  order: -1;
+  width: 34.2rem;
+}
+.section.product-section .product-card footer {
+  border-block-start: 1px solid #151934;
+  margin-inline-end: auto;
+  padding-block-start: 2rem;
+  width: calc(100% - 15px);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .section.showcase-section {
