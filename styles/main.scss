@@ -7,8 +7,9 @@
 /* Components */
 @import 'components/button';
 @import 'components/card';
-@import 'components/navbar';
+@import 'components/form';
 @import 'components/link';
+@import 'components/navbar';
 
 /* Sections */
 @import 'layout/discord-section';
@@ -18,6 +19,7 @@
 @import 'layout/product-section';
 @import 'layout/showcase-section';
 @import 'layout/testimonial-section';
+@import 'layout/footer';
 
 body {
   background-color: $dark-bg-main;
