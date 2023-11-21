@@ -1,17 +1,18 @@
 .header {
-  border-bottom: $dark-border;
-
   @include flex-center;
+
+  border-bottom: $dark-border;
 }
 
 .nav {
+  @include flex-center($justify: space-between);
+
   flex: 1;
   flex-wrap: wrap;
   max-width: $main-content-width;
-  padding-block: 2.5rem;
-  padding-inline: $padding-inline-default;
-
-  @include flex-center($justify: space-between);
+  padding: 2.5rem $padding-inline-default;
+  font-family: Inter, sans-serif;
+  user-select: none;
 
   .nav__brand {
     img {
@@ -21,12 +22,14 @@
   }
 
   .nav__toggler {
-    cursor: pointer;
     fill: white;
+    cursor: pointer;
   }
 
   .nav__menu {
     @include flex-center;
+
+    gap: 1.5rem;
 
     &.collapsible__content {
       display: none;
@@ -34,10 +37,6 @@
 
     li {
       padding: 1rem;
-
-      & ~ li {
-        margin-inline-start: 1.5rem;
-      }
     }
   }
 
@@ -51,7 +50,7 @@
       display: none;
     }
 
-    & .nav__menu.collapsible__content {
+    .nav__menu.collapsible__content {
       display: flex;
       flex-basis: auto;
     }
