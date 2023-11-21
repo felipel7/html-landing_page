@@ -10,26 +10,16 @@ menu {
   list-style: none;
 }
 
-#prev {
-  img {
-    transform: scaleX(-1);
-  }
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-.full-bleed {
-  grid-column: 1 / span 3;
-}
-
 .link {
-  color: $neutral-text-color;
-  cursor: pointer;
   transition: color ease-in-out 0.2s;
+  color: $neutral-text-color;
   font-size: 1.6rem;
+  cursor: pointer;
 
   &:hover,
   &.active {
@@ -45,4 +35,12 @@ a {
 .icon--small {
   width: 30px;
   height: 30px;
+}
+
+.full-bleed {
+  grid-column: 1 / span 3;
+}
+
+.prev img {
+  transform: scaleX(-1);
 }

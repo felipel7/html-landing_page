@@ -23,7 +23,7 @@
     width: fit-content;
     max-width: 80rem;
     max-height: 51.2rem;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
 
     img {
       width: 100%;
@@ -39,8 +39,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 95% 65%, rgba($secondary-color, 0.2) 0%, transparent 25%),
-      radial-gradient(circle at 5% 50%, rgba($primary-color, 0.15) 0%, transparent 25%);
+    background: radial-gradient(circle at 5% 50%, rgba($primary-color, 0.15) 0%, transparent 25%),
+      radial-gradient(circle at 95% 60%, rgba($secondary-color, 0.15) 0%, transparent 22%);
     z-index: -1;
   }
 }
