@@ -29,6 +29,7 @@ a {
   color: $neutral-text-color;
   cursor: pointer;
   transition: color ease-in-out 0.2s;
+  font-size: 1.6rem;
 
   &:hover,
   &.active {
