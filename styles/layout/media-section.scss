@@ -1,0 +1,35 @@
+.section.media-section {
+  @include flex-center($justify: flex-start);
+
+  flex-wrap: wrap;
+  gap: 2.4rem;
+
+  hgroup {
+    @include flex-center($justify: space-between);
+
+    padding-block-end: 4.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    gap: 2.4rem;
+
+    h2,
+    p {
+      flex-basis: 100%;
+    }
+
+    @media screen and (width >= 1024px) {
+      flex-wrap: nowrap;
+      text-align: left;
+
+      h2 {
+        flex-basis: 65%;
+      }
+
+      p {
+        flex-basis: 30%;
+        min-width: 38.5rem;
+      }
+    }
+  }
+}
