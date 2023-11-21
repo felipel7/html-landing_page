@@ -1,82 +1,81 @@
-.section.features-section {
-  .features-container {
-    background-color: $dark-bg-card;
-    border: $dark-border-button;
-    border-radius: 10px;
-    padding: 5rem;
+.features-container {
+  background-color: $dark-bg-card;
+  border: $dark-border-button;
+  border-radius: 10px;
+  padding: 5rem;
+  margin: 7rem $padding-inline-default;
+}
+
+.features-article {
+  @include flex-center(row);
+
+  flex-wrap: wrap;
+  gap: 5rem;
+  text-align: center;
+
+  .btn {
+    display: block;
+    margin-block-start: 3rem;
+    margin-inline: auto;
   }
 
-  .features-article {
-    @include flex-center(row);
+  p {
+    margin-block-start: 1.5rem;
+  }
 
-    flex-wrap: wrap;
-    gap: 5rem;
-    text-align: center;
+  @media screen and (width >= 1024px) {
+    justify-content: space-between;
+    text-align: left;
+
+    hgroup {
+      flex: 1;
+      max-width: 50rem;
+    }
 
     .btn {
-      display: block;
-      margin-block-start: 3rem;
-      margin-inline: auto;
-    }
-
-    p {
-      margin-block-start: 1.5rem;
-    }
-
-    @media screen and (width >= 1024px) {
-      justify-content: space-between;
-      text-align: left;
-
-      hgroup {
-        flex: 1;
-        max-width: 50rem;
-      }
-
-      .btn {
-        margin-inline: initial;
-      }
-    }
-
-    picture {
-      height: 100%;
-      max-height: 40rem;
-      max-width: 52.5rem;
-      width: 100%;
+      margin-inline: initial;
     }
   }
 
-  .product-group {
-    display: grid;
-    grid-gap: 2.5rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin-block-start: 4rem;
+  picture {
+    height: 100%;
+    max-height: 40rem;
+    max-width: 52.5rem;
+    width: 100%;
+  }
+}
 
-    @media screen and (width >= 1024px) {
-      grid-template-columns: 1fr 1fr;
-    }
+.product-group {
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-block-start: 4rem;
 
-    .card {
-      @include flex-center(column);
+  @media screen and (width >= 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-      background-color: $dark-bg-main;
-      border-radius: 10px;
-      gap: 3.2rem;
-      max-width: 54rem;
-      padding-block-end: 0;
-    }
+  .card {
+    @include flex-center(column);
 
-    hgroup p {
-      margin-block-start: 1rem;
-    }
+    background-color: $dark-bg-main;
+    border-radius: 10px;
+    gap: 3.2rem;
+    max-width: 54rem;
+    padding-block-end: 0;
+  }
 
-    picture {
-      @include flex-center;
+  hgroup p {
+    margin-block-start: 1rem;
+  }
 
-      img {
-        height: 100%;
-        width: 100%;
-      }
+  picture {
+    @include flex-center;
+
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
