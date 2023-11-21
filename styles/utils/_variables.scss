@@ -19,4 +19,4 @@ $dark-border: 1px solid $dark-border-color;
 $dark-border-button: 1px solid #282d45;
 
 /* Sizes and Spacing */
-$padding-inline-default: 2vw;
+$padding-inline-default: clamp(2rem, 2vw, 2vw);
