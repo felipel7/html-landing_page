@@ -1,6 +1,3 @@
-@import '../utils/variables';
-@import '../utils/mixins';
-
 .header {
   border-bottom: $dark-border;
 
@@ -9,21 +6,54 @@
 
 .nav {
   flex: 1;
+  flex-wrap: wrap;
   max-width: $main-content-width;
   padding-block: 2.5rem;
   padding-inline: $padding-inline-default;
 
   @include flex-center($justify: space-between);
-}
 
-.menu {
-  @include flex-center;
+  .nav__brand {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  li {
-    padding: 1rem;
+  .nav__toggler {
+    cursor: pointer;
+    fill: white;
+  }
 
-    & ~ li {
-      margin-inline-start: 1.5rem;
+  .nav__menu {
+    @include flex-center;
+
+    &.collapsible__content {
+      display: none;
+    }
+
+    li {
+      padding: 1rem;
+
+      & ~ li {
+        margin-inline-start: 1.5rem;
+      }
+    }
+  }
+
+  &.collapsible--expanded .collapsible__content {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  @media screen and (width >= 768px) {
+    .nav__toggler {
+      display: none;
+    }
+
+    & .nav__menu.collapsible__content {
+      display: flex;
+      flex-basis: auto;
     }
   }
 }

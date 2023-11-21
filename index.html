@@ -3,32 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link
       href="https://fonts.cdnfonts.com/css/satoshi?styles=135005,135007"
       rel="stylesheet"
     >
+    <link rel="stylesheet" href="style.css">
     <title>SasS Landing Page</title>
   </head>
   <body>
     <!-- Navbar -->
     <header class="header">
-      <nav class="nav">
-        <h1>brand logo</h1>
-        <menu class="menu">
-          <li>link 1</li>
-          <li>link 2</li>
-          <li>link 3</li>
+      <nav class="nav collapsible">
+        <a href='/' class="nav__brand">
+          <img src='assets/logo.svg' alt='logo'>
+        </a>        
+        <svg class="icon nav__toggler">
+          <use xlink:href="assets/icons/sprite.svg#menu"></use>
+        </svg>
+        <menu class="nav__menu collapsible__content">
+          <li><a href='#' class='link active'>Home</a></li>
+          <li><a href='#' class='link'>About</a></li>
+          <li><a href='#' class='link'>Features</a></li>
         </menu>
       </nav>
     </header>
-    
+
     <main>
       <!-- Hero Block -->
       <section class="section hero-section">
         <hgroup>
-          <h2>A CRM dashboard for engineering teams</h2>
+          <h1>A CRM dashboard for engineering teams</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. Gravida convallis orci
             ultrices non. Ultricies tempor at ut cursus mi. Aliquam sed amet
@@ -536,7 +544,7 @@
       const prevButton = document.getElementById('prev');
       const nextButton = document.getElementById('next');
       const cards = document.querySelectorAll('.quotes-container .card');
-
+      
       let currentIndex = 0;
 
       prevButton.addEventListener('click', () => {
@@ -566,6 +574,19 @@
       }
 
       updateButtonsState();
+
+      /* Collapsible Navbar */
+      const collapsible = document.querySelector('.collapsible');
+
+      collapsible.addEventListener('click', event => {
+        const svgButton = document.querySelector('.nav__toggler');
+
+        if (event.target.tagName === 'A' || event.target !== svgButton) {
+          event.stopPropagation();
+        } else {
+          collapsible.classList.toggle('collapsible--expanded');
+        }
+      })
     </script>
   </body>
 </html>
