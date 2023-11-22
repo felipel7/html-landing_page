@@ -6,19 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch --no-source-map styles/main.scss style.css",
-    "lint": "stylelint 'styles/**/*.scss' --fix"
+    "lint": "stylelint 'styles/**/*.scss'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.69.5",
-    "stylelint": "^15.11.0",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-recommended": "^13.0.0",
+    "stylelint": "^15.0.0",
     "stylelint-config-standard-scss": "^11.1.0",
-    "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^5.3.1",
-    "stylelint-selector-bem-pattern": "^3.0.1"
+    "stylelint-order": "^6.0.3"
   }
 }

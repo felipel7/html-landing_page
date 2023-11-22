@@ -22,10 +22,11 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
   background: linear-gradient(#f5f5f5, #7e808f);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  line-height: 1.2;
 }
 
 h1 {
@@ -69,7 +70,7 @@ figcaption {
 .subtitle--small,
 .subtitle--large {
   color: #8f9bb7;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .subtitle--small {
@@ -166,12 +167,12 @@ a {
 /* Sizes and Spacing */
 .btn {
   all: unset;
-  border-radius: 3.5rem;
-  cursor: pointer;
-  font-size: 1.6rem;
   padding: 1.5rem 2.5rem;
   transition: filter ease-in-out 0.2s;
+  border-radius: 3.5rem;
+  font-size: 1.6rem;
   line-height: 1;
+  cursor: pointer;
 }
 .btn:hover {
   filter: brightness(0.9);
@@ -182,23 +183,23 @@ a {
 }
 
 .btn-outline {
-  background: linear-gradient(25deg, rgba(21, 25, 52, 0.52) 10%, rgba(21, 25, 52, 0.08) 50%, rgba(21, 25, 52, 0.42) 90%);
   border: 1px solid #282d45;
+  background: linear-gradient(25deg, rgba(21, 25, 52, 0.52) 10%, rgba(21, 25, 52, 0.08) 50%, rgba(21, 25, 52, 0.42) 90%);
 }
 
 .btn-control {
+  padding: 0.5rem;
   border-radius: 0.8rem;
   line-height: 1;
-  padding: 0.5rem;
 }
 .btn-control svg {
-  height: 2.4rem;
   width: 2.4rem;
+  height: 2.4rem;
 }
 
 .btn:disabled {
-  cursor: not-allowed;
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .card {
@@ -223,9 +224,9 @@ a {
 }
 
 .form {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 40rem;
@@ -244,9 +245,9 @@ a {
   line-height: 1.33;
 }
 .form p {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-basis: 100%;
 }
@@ -268,31 +269,31 @@ a {
 }
 
 .link-arrow {
-  font-weight: bold;
   position: relative;
+  font-weight: bold;
 }
 .link-arrow::after {
-  content: "→";
-  margin-left: 5px;
   position: absolute;
+  margin-left: 5px;
   transition: margin 0.15s;
+  content: "→";
 }
 .link-arrow:hover::after {
   margin-left: 10px;
 }
 
 .header {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   border-bottom: 1px solid #151934;
 }
 
 .nav {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex: 1;
   flex-wrap: wrap;
@@ -310,9 +311,9 @@ a {
   cursor: pointer;
 }
 .nav .nav__menu {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
@@ -338,9 +339,9 @@ a {
 
 /* Sections */
 .section.discord-section {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
@@ -355,9 +356,9 @@ a {
   gap: 1.5rem;
 }
 .section.discord-section hgroup {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
   margin-block: 1.5rem;
@@ -365,8 +366,8 @@ a {
   text-align: center;
 }
 .section.discord-section .discord__title {
-  font-size: 4rem;
   color: #f5f5f5;
+  font-size: 4rem;
 }
 .section.discord-section .discord__image {
   order: -1;
@@ -393,9 +394,9 @@ a {
   width: 100%;
 }
 .features-container .features-article {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
@@ -436,9 +437,9 @@ a {
   margin-block-start: 4rem;
 }
 .features-container .product-container .card {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   max-width: 54rem;
   padding: 3rem 2rem 0;
@@ -470,13 +471,13 @@ a {
 }
 
 .section.hero-section {
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 .section.hero-section hgroup {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
@@ -503,25 +504,25 @@ a {
   margin: 0 1.5rem 1.5rem;
 }
 .section.hero-section::after {
-  content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 5% 50%, rgba(114, 20, 255, 0.15) 0%, transparent 25%), radial-gradient(circle at 95% 60%, rgba(50, 202, 253, 0.15) 0%, transparent 22%);
+  content: "";
   z-index: -1;
 }
 
 .section.media-section {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2.4rem;
 }
 .section.media-section hgroup {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding-block-end: 4.5rem;
   flex-wrap: wrap;
@@ -548,27 +549,27 @@ a {
 }
 
 .section.product-section {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 6rem;
   padding-block-end: 14rem;
 }
 .section.product-section .products-container {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-basis: 100%;
   flex-wrap: wrap;
   gap: 2.4rem;
 }
 .section.product-section .product-card {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   max-width: 35rem;
   max-width: 40rem;
@@ -577,9 +578,9 @@ a {
   gap: 2rem;
 }
 .section.product-section .product-card hgroup {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
@@ -602,9 +603,9 @@ a {
   max-height: 23rem;
 }
 .section.product-section .product-card footer {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   border-block-start: 1px solid #282d45;
   margin-inline-end: auto;
@@ -636,9 +637,9 @@ a {
 }
 
 .card.article-invitation {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
@@ -696,9 +697,9 @@ a {
 }
 .section.showcase-section div .article-mobile,
 .section.showcase-section div .article-upload {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   position: relative;
   height: 100%;
@@ -752,9 +753,9 @@ a {
 }
 
 .section.testimonial-section {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
 }
@@ -766,18 +767,18 @@ a {
   margin-block-end: 2.4rem;
 }
 .section.testimonial-section .buttons-container {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   align-self: center;
   gap: 1.5rem;
 }
 
 .testimonial-container {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: fit-content;
@@ -802,9 +803,9 @@ a {
   overflow: visible;
 }
 .testimonial-container blockquote header {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
   margin-block-end: 2.5rem;
@@ -818,9 +819,9 @@ a {
   height: 4.1rem;
 }
 .testimonial-container blockquote .testimonial__author {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex: 1;
 }
@@ -848,9 +849,9 @@ a {
 }
 
 .footer {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
@@ -859,9 +860,9 @@ a {
   margin-inline: auto;
 }
 .footer .footer-container {
-  align-items: flex-start;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -870,13 +871,13 @@ a {
   gap: 5rem;
 }
 .footer .footer-container .form-container {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
+  height: 100%;
   max-height: 30.5rem;
   gap: 3.5rem;
-  height: 100%;
   z-index: 1;
 }
 .footer::before {
@@ -899,9 +900,9 @@ a {
   margin-block-end: 3.5rem;
 }
 .footer-nav ul {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
   font-size: 1.6rem;
@@ -924,15 +925,15 @@ a {
     justify-self: flex-end;
   }
   .footer-nav ul {
-    column-gap: 10rem;
     max-height: 33rem;
+    column-gap: 10rem;
   }
 }
 
 .social-media {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3rem;
@@ -940,9 +941,9 @@ a {
   width: 100%;
 }
 .social-media ul {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }

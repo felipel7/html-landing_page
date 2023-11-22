@@ -1,6 +1,6 @@
 .section.hero-section {
-  text-align: center;
   position: relative;
+  text-align: center;
 
   hgroup {
     @include flex-center;
@@ -36,11 +36,11 @@
   }
 
   &::after {
-    content: "";
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at 5% 50%, rgba($primary-color, 0.15) 0%, transparent 25%),
       radial-gradient(circle at 95% 60%, rgba($secondary-color, 0.15) 0%, transparent 22%);
+    content: "";
     z-index: -1;
   }
 }

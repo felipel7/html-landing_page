@@ -12,10 +12,11 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
   background: linear-gradient($dark-text-color, #7e808f);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  line-height: 1.2;
 }
 
 h1 {
@@ -59,7 +60,7 @@ figcaption {
 .subtitle--small,
 .subtitle--large {
   color: $neutral-text-color;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .subtitle--small {

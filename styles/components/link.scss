@@ -1,12 +1,12 @@
 .link-arrow {
-  font-weight: bold;
   position: relative;
+  font-weight: bold;
 
   &::after {
-    content: '→';
-    margin-left: 5px;
     position: absolute;
+    margin-left: 5px;
     transition: margin 0.15s;
+    content: "→";
   }
 
   &:hover::after {
