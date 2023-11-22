@@ -56,9 +56,15 @@ figcaption {
 }
 
 .subtitle,
+.subtitle--small,
 .subtitle--large {
   color: $neutral-text-color;
   font-family: "Inter", sans-serif;
+}
+
+.subtitle--small {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 .subtitle {
