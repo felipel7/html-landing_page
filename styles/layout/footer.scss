@@ -24,6 +24,13 @@
       gap: 3.5rem;
       z-index: 1;
     }
+
+    img {
+      width: 100%;
+      max-width: 15.5rem;
+      height: 100%;
+      max-height: 35rem;
+    }
   }
 
   &::before {
