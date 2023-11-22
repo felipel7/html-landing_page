@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.cdnfonts.com/css/satoshi?styles=135005,135007"
+      href="https://fonts.cdnfonts.com/css/satoshi?styles=135002,135009"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="style.css">
@@ -34,10 +34,10 @@
 
     <main>
       <!-- Hero Block -->
-      <section class="section hero-section">
+      <section class="section hero-section full-bleed">
         <hgroup>
           <h1>A CRM dashboard for engineering teams</h1>
-          <p>
+          <p class='subtitle--large'>
             Lorem ipsum dolor sit amet consectetur. Gravida convallis orci
             ultrices non. Ultricies tempor at ut cursus mi. Aliquam sed amet
             vitae orci ac penatibus consectetur.
@@ -45,7 +45,7 @@
         </hgroup>
 
         <button type="button" class="btn btn-primary">Get a demo</button>
-        <button type="button" class="btn btn-outline">view pricing</button>
+        <button type="button" class="btn btn-outline">View pricing</button>
 
         <picture>
           <source
@@ -88,7 +88,7 @@
       <section class="section media-section">
         <hgroup>
           <h2>Powerful features to help you manage all your leads</h2>
-          <p>
+          <p class='subtitle'>
             Ipsum dolor sit amet consectetur. Aliquam elementum elementum in
             ultrices. Dui maecenas ut eros turpis ultrices metus morbi aliquet
             vel.
@@ -97,10 +97,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/user.svg" alt="user">
-            <h3>User information</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#user"></use>
+            </svg>
+            <h3 class="card__title">User information</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -108,10 +110,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/deal.svg" alt="deal">
-            <h3>Deal tracking</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#deal"></use>
+            </svg>
+            <h3 class="card__title">Deal tracking</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -119,10 +123,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/pipeline.svg" alt="pipeline">
-            <h3>Pipeline oversight</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#pipeline"></use>
+            </svg>
+            <h3 class="card__title">Pipeline oversight</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -130,10 +136,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/report.svg" alt="report">
-            <h3>Reporting panel</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#report"></use>
+            </svg>
+            <h3 class="card__title">Reporting panel</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -141,10 +149,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/meeting.svg" alt="meeting">
-            <h3>Meeting scheduler</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#meeting"></use>
+            </svg>
+            <h3 class="card__title">Meeting scheduler</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -152,10 +162,12 @@
 
         <article class="card">
           <header>
-            <img src="assets/icons/email.svg" alt="email">
-            <h3>Email tracking</h3>
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#email"></use>
+            </svg>
+            <h3 class="card__title">Email tracking</h3>
           </header>
-          <p>
+          <p class="subtitle">
             Lorem ipsum dolor sit amet consectetur turpis tristique nulla
             posuere amet arcu dictum ultricies convallis.
           </p>
@@ -167,19 +179,27 @@
         <h2>Essential apps that protect your</h2>
         <h3>
           <span>
-            <img src="./assets/icons/mail.svg" alt="email">
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#mail"></use>
+            </svg>
             Email,
           </span>
           <span>
-            <img src="./assets/icons/calendar.svg" alt="events">
+            <svg class="icon--small">
+              <use xlink:href="assets/icons/sprite.svg#calendar"></use>
+            </svg>
             Events,
           </span>
           <span>
-            <img src="./assets/icons/folder.svg" alt="files">
+            <svg class="icon--small">
+              <use xlink:href="assets/icons/sprite.svg#folder"></use>
+            </svg>
             Files,
           </span>
           <span>
-            <img src="./assets/icons/document.svg" alt="documents">
+            <svg class="icon--small">
+              <use xlink:href="assets/icons/sprite.svg#document"></use>
+            </svg>
             Documents
           </span>
         </h3>
@@ -187,8 +207,8 @@
         <article class="card article-invitation">
           <header>
             <hgroup>
-              <h3>End-to-end encrypted inbox and messages</h3>
-              <p>
+              <h4 class="feature__title">End-to-end encrypted inbox and messages</h4>
+              <p class='subtitle'>
                 Lorem ipsum dolor sit amet consectetur. Proin dignissim tortor
                 mauris viverra sed volutpat mauris. Amet nisi amet commodo
                 adipiscing ut imperdiet nunc.
@@ -227,24 +247,70 @@
 
         <div>
           <article class="card article-mobile">
-            <img src="assets/phone.png" alt="phone">
-            <h3>Mobile applications</h3>
-            <p>
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                sizes="(max-width: 272px) 100vw, 272px"
+                srcset="assets/phone_dpltam_c_scale,w_272.png 272w"
+              >
+              <source
+                media="(min-width: 768px) and (max-width: 991px)"
+                sizes="(max-width: 272px) 100vw, 272px"
+                srcset="assets/phone_dpltam_c_scale,w_272.png 272w"
+              >
+              <source
+                media="(min-width: 992px) and (max-width: 1199px)"
+                sizes="(max-width: 272px) 100vw, 272px"
+                srcset="assets/phone_dpltam_c_scale,w_272.png 272w"
+              >
+              <img
+                sizes="(max-width: 272px) 100vw, 272px"
+                srcset="assets/phone_dpltam_c_scale,w_272.png 272w"
+                src="assets/phone_dpltam_c_scale,w_272.png"
+                alt="phone"
+              >
+            </picture>
+            <h4 class="feature__title">Mobile applications</h4>
+            <p class='subtitle'>
               Lorem ipsum dolor sit amet consectetur. Viverra sed dignissim
               risus aliquet condimentum. Vulputate varius feugiat egestas congue
             </p>
           </article>
           <article class="card article-upload">
-            <img src="assets/table.png" alt="table">
-            <h3>Upload, share, and preview any file</h3>
-            <p>
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                sizes="(max-width: 580px) 100vw, 580px"
+                srcset="
+                  assets/table_nzqlmn_c_scale,w_300.png 300w,
+                  assets/table_nzqlmn_c_scale,w_580.png 580w"
+              >
+              <source
+                media="(min-width: 768px) and (max-width: 991px)"
+                sizes="(max-width: 580px) 100vw, 580px"
+                srcset="assets/table_nzqlmn_c_scale,w_580.png 580w"
+              >
+              <source
+                media="(min-width: 992px) and (max-width: 1199px)"
+                sizes="(max-width: 580px) 100vw, 580px"
+                srcset="assets/table_nzqlmn_c_scale,w_580.png 580w"
+              >
+              <img
+                sizes="(max-width: 580px) 100vw, 580px"
+                srcset="assets/table_nzqlmn_c_scale,w_580.png 580w"
+                src="assets/table_nzqlmn_c_scale,w_580.png"
+                alt="table"
+              >
+            </picture>
+            <h4 class="feature__title">Upload, share, and preview any file</h4>
+            <p class='subtitle'>
               Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula
               massa netus nulla ultricies purus.
             </p>
           </article>
         </div>
 
-        <button type="button" class="btn btn-primary">Get a started</button>
+        <button type="button" class="btn btn-primary">Get a Started</button>
         <button type="button" class="btn btn-outline">
           Browse all feature
         </button>
@@ -255,7 +321,7 @@
         <article class='features-article'>
           <hgroup>
             <h3>Transparent, audited, &open source</h3>
-            <p>
+            <p class='subtitle'>
               Lorem ipsum dolor sit amet consectetur. 
               Nulla quisque scelerisque eget quis. 
               Eu amet amet eu interdum.
@@ -288,29 +354,74 @@
             >
           </picture>
         </article>
-        <div class='product-group'>
+        <div class='product-container'>
           <article class='card'>
             <hgroup>
-              <h3>Product Mail</h3>
-              <p>Gonsectetur eque nec nunc facilisis tellus tincidunt. Malesuada maecenas ac bibendum consectetur.</p>
+              <h4 class="card__title">Product Mail</h4>
+              <p class="subtitle">
+                Gonsectetur eque nec nunc facilisis tellus tincidunt. 
+                Malesuada maecenas ac bibendum consectetur.
+              </p>
             </hgroup>
-            <picture>
+            <picture class="product-mail">
+              <source
+                media="(max-width: 767px)"
+                sizes="(max-width: 417px) 100vw, 417px"
+                srcset="
+                assets/product-mail_xxx3k0_c_scale,w_300.png 300w,
+                assets/product-mail_xxx3k0_c_scale,w_417.png 417w"
+              >
+              <source
+                media="(min-width: 768px) and (max-width: 991px)"
+                sizes="(max-width: 417px) 100vw, 417px"
+                srcset="assets/product-mail_xxx3k0_c_scale,w_417.png 417w"
+              >
+              <source
+                media="(min-width: 992px) and (max-width: 1199px)"
+                sizes="(max-width: 417px) 100vw, 417px"
+                srcset="assets/product-mail_xxx3k0_c_scale,w_417.png 417w"
+              >
               <img
-                src="assets/product-mail.png"
-                alt="product mail"
+                sizes="(max-width: 417px) 100vw, 417px"
+                srcset="
+                assets/product-mail_xxx3k0_c_scale,w_417.png 417w"
+                src="assets/product-mail_xxx3k0_c_scale,w_417.png"
+                alt="product-mail"
               >
             </picture>
           </article>
 
           <article class='card'>
             <hgroup>
-              <h3>Product UI</h3>
-              <p>Honsectetur eque nec nunc facilisis tellus tincidunt. Malesuada maecenas ac bibendum consectetur.</p>
+              <h4 class="card__title">Product UI</h4>
+              <p class="subtitle">
+                Honsectetur eque nec nunc facilisis tellus tincidunt. 
+                Malesuada maecenas ac bibendum consectetur.
+              </p>
             </hgroup>
-            <picture>
+            <picture class="product-ui">
+              <source
+                media="(max-width: 767px)"
+                sizes="(max-width: 488px) 100vw, 488px"
+                srcset="
+                  assets/product-ui_mpxjzj_c_scale,w_300.png 300w,
+                  assets/product-ui_mpxjzj_c_scale,w_488.png 488w"
+              >
+              <source
+                media="(min-width: 768px) and (max-width: 991px)"
+                sizes="(max-width: 488px) 100vw, 488px"
+                srcset="assets/product-ui_mpxjzj_c_scale,w_488.png 488w"
+              >
+              <source
+                media="(min-width: 992px) and (max-width: 1199px)"
+                sizes="(max-width: 488px) 100vw, 488px"
+                srcset="assets/product-ui_mpxjzj_c_scale,w_488.png 488w"
+              >
               <img
-                src="assets/product-ui.png"
-                alt="product ui"
+                sizes="(max-width: 488px) 100vw, 488px"
+                srcset="assets/product-ui_mpxjzj_c_scale,w_488.png 488w"
+                src="assets/product-ui_mpxjzj_c_scale,w_488.png"
+                alt="product-ui"
               >
             </picture>
           </article>
@@ -321,23 +432,25 @@
       <section class="section testimonial-section full-bleed">
         <hgroup>
           <h2>What our clients say</h2>
-          <p>
+          <p class="subtitle">
             Rmet facilisi arcu odio urna aenean erat. Pellentesque in vitae
             lobortis orci tincidunt facilisis. Pulvinar lacus ultricies turpis
             urna sapien.
           </p>
         </hgroup>
 
-        <div class="quotes-container">
+        <div class="testimonial-container">
           <blockquote class="card">
             <header>
               <img
                 src="assets/avatar/avatar-cameron.png"
                 alt="Cameron Williamson"
               >
-              <div>
+              <div class="testimonial__author">
                 <p>Cameron Williamson<small>Web Designer</small></p>
-                <img src="assets/icons/quote.svg" alt="quote mark">
+                <svg class="icon">
+                  <use xlink:href="assets/icons/sprite.svg#quote"></use>
+                </svg>
               </div>
             </header>
             <q>
@@ -349,9 +462,11 @@
           <blockquote class="card">
             <header>
               <img src="assets/avatar/avatar-esther.png" alt="Esther Howard">
-              <div>
+              <div class="testimonial__author">
                 <p>Esther Howard<small>Web Developer</small></p>
-                <img src="assets/icons/quote.svg" alt="quote mark">
+                <svg class="icon">
+                  <use xlink:href="assets/icons/sprite.svg#quote"></use>
+                </svg>
               </div>
             </header>
             <q>
@@ -362,9 +477,11 @@
           <blockquote class="card">
             <header>
               <img src="assets/avatar/avatar-jenny.png" alt="Jenny Wilson">
-              <div>
+              <div class="testimonial__author">
                 <p>Jenny Wilson<small>UI/UX Designer</small></p>
-                <img src="assets/icons/quote.svg" alt="quote mark">
+                <svg class="icon">
+                  <use xlink:href="assets/icons/sprite.svg#quote"></use>
+                </svg>
               </div>
             </header>
             <q>
@@ -375,11 +492,25 @@
           </blockquote>
         </div>
         <p class="buttons-container">
-          <button type="button" id="prev" class="btn btn-outline btn-control">
-            <img src="assets/icons/arrow.svg" alt="arrow">
+          <button 
+            type="button" 
+            id="prev"  
+            class="btn btn-outline btn-control flip-horizontal" 
+            aria-label="Previous Button"
+          >
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#arrow"></use>
+            </svg>
           </button>
-          <button type="button" id="next" class="btn btn-outline btn-control">
-            <img src="assets/icons/arrow.svg" alt="arrow">
+          <button 
+            type="button" 
+            id="next"
+            class="btn btn-outline btn-control" 
+            aria-label="Next Button"
+          >
+            <svg class="icon">
+              <use xlink:href="assets/icons/sprite.svg#arrow"></use>
+            </svg>
           </button>
         </p>
       </section>
@@ -387,8 +518,8 @@
       <!-- Discord Block -->
       <section class="section discord-section">
         <hgroup>
-          <h3>Join the community</h3>
-          <p>
+          <h3 class="discord__title">Join the community</h3>
+          <p class="subtitle">
             Join our 400,000+ person community and contribute to a more private
             and decentralized internet. Start for free.
           </p>
@@ -396,7 +527,7 @@
         <img
           src="assets/discord/logo.svg"
           alt="discord logo"
-          id="discord-logo"
+          class="discord__image"
         >
         <button type="button" class="btn btn-primary">Join Discord</button>
       </section>
@@ -408,8 +539,8 @@
         <div class="products-container">
           <article class="card product-card">
             <hgroup>
-              <h3>Product Mail is taking on Gmail by betting on privacy</h3>
-              <p>
+              <h3 class="card__title">Product Mail is taking on Gmail by betting on privacy</h3>
+              <p class="subtitle--small">
                 Ramen consectetur. Est porttitor mattis pharetra sit id viverra.
                 Vivamus mauris augue pharetra cras turpis faucibus elit urna.
               </p>
@@ -418,14 +549,14 @@
             <img src="assets/product-1.png" alt="product 1">
 
             <footer>
-              <time datetime="2023-02-08">February 8, 2023</time>
+              <time datetime="2023-02-08" class="subtitle--small">February 8, 2023</time>
               <a href="#" class="link-arrow">Read More</a>
             </footer>
           </article>
           <article class="card product-card">
             <hgroup>
-              <h3>Wants You To Sign Out Of Google Workspace Forever</h3>
-              <p>
+              <h3 class="card__title">Wants You To Sign Out Of Google Workspace Forever</h3>
+              <p class="subtitle--small">
                 Est porttitor mattis pharetra sit id viverra. Vivamus mauris
                 augue pharetra cras turpis faucibus elit urna.
               </p>
@@ -434,14 +565,14 @@
             <img src="assets/product-2.png" alt="product 2">
 
             <footer>
-              <time datetime="2023-02-08">February 8, 2023</time>
+              <time datetime="2023-02-08" class="subtitle--small">February 8, 2023</time>
               <a href="#" class="link-arrow">Read More</a>
             </footer>
           </article>
           <article class="card product-card">
             <hgroup>
-              <h3>The Best Email Encryption Services for 2023</h3>
-              <p>
+              <h3 class="card__title">The Best Email Encryption Services for 2023</h3>
+              <p class="subtitle--small">
                 Dortitor mattis pharetra sit id viverra. Vivamus mauris augue
                 pharetra cras turpis faucibus elit urna.
               </p>
@@ -450,7 +581,7 @@
             <img src="assets/product-3.png" alt="product 3">
 
             <footer>
-              <time datetime="2023-02-08">February 8, 2023</time>
+              <time datetime="2023-02-08" class="subtitle--small">February 8, 2023</time>
               <a href="#" class="link-arrow">Read More</a>
             </footer>
           </article>
@@ -465,14 +596,9 @@
           <img src="assets/logo.svg" alt="logo">
 
           <form action="/" method="post" class="form">
-            <h4>Subscribe to our newsletter</h4>
+            <h3 class="form__title">Subscribe to our newsletter</h3>
             <p>
-              <input
-                type="text"
-                name=" email"
-                id="email"
-                placeholder="Enter your email"
-              >
+              <input type="text" name=" email" class="email-input" placeholder="Enter your email">
             </p>
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
@@ -509,30 +635,38 @@
           </div>
         </nav>
       </div>
-      <div id="social-media">
-        <p>
-          &copy; 2023 Felipe | Design replicated from Webocean LTD - Powered by
-          Webflow
+      <div class="social-media">
+        <p class="subtitle">
+          &copy; 2023 <span>Felipel7</span> | Design replicated from 
+          <span>Webocean LTD</span> - Powered by Webflow
         </p>
         <ul>
           <li>
-            <button type="button" class="btn btn-outline btn-control">
-              <img src="assets/icons/facebook.svg" alt="facebook">
+            <button type="button" class="btn btn-outline btn-control" aria-label="Facebook Button">
+              <svg class="icon">
+                <use xlink:href="assets/icons/sprite.svg#facebook"></use>
+              </svg>
             </button>
           </li>
           <li>
-            <button type="button" class="btn btn-outline btn-control">
-              <img src="assets/icons/twitter.svg" alt="twitter">
+            <button type="button" class="btn btn-outline btn-control" aria-label="Twitter Button">
+              <svg class="icon">
+                <use xlink:href="assets/icons/sprite.svg#twitter"></use>
+              </svg>
             </button>
           </li>
           <li>
-            <button type="button" class="btn btn-outline btn-control">
-              <img src="assets/icons/linkedin.svg" alt="linkedin">
+            <button type="button" class="btn btn-outline btn-control" aria-label="Linkedin Button">
+              <svg class="icon">
+                <use xlink:href="assets/icons/sprite.svg#linkedin"></use>
+              </svg>
             </button>
           </li>
           <li>
-            <button type="button" class="btn btn-outline btn-control">
-              <img src="assets/icons/instagram.svg" alt="instagram">
+            <button type="button" class="btn btn-outline btn-control" aria-label="Instagram Button">
+              <svg class="icon">
+                <use xlink:href="assets/icons/sprite.svg#instagram"></use>
+              </svg>
             </button>
           </li>
         </ul>
@@ -543,7 +677,7 @@
     <script>
       const prevButton = document.getElementById('prev');
       const nextButton = document.getElementById('next');
-      const cards = document.querySelectorAll('.quotes-container .card');
+      const cards = document.querySelectorAll('.testimonial-container .card');
       
       let currentIndex = 0;
 

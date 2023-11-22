@@ -1,38 +1,37 @@
 .footer {
   @include flex-center(column);
 
-  margin-inline: auto;
-  max-width: $main-content-width;
-  padding: 10rem 2vw 4rem;
   position: relative;
   width: 100%;
+  max-width: $main-content-width;
+  padding: 10rem $padding-inline-default 4rem;
+  margin-inline: auto;
 
   .footer-container {
-    @include flex-center;
+    @include flex-center($align: flex-start);
 
-    border-bottom: $dark-border-button;
     flex-wrap: wrap;
-    padding-block-end: 4.5rem;
     width: 100%;
+    border-bottom: $dark-border-button;
+    padding-block-end: 4.5rem;
+    gap: 5rem;
 
     .form-container {
       @include flex-center(column, space-between, flex-start);
 
-      height: 33rem;
+      max-height: 30.5rem;
+      gap: 3.5rem;
+      height: 100%;
       z-index: 1;
     }
   }
 
   &::before {
-    background: radial-gradient(
-      circle at 55% 65%,
-      rgba($primary-color, 0.15) 0%,
-      transparent 65%
-    );
-    content: '';
-    inset: 0;
-    pointer-events: none;
     position: absolute;
+    background: radial-gradient(circle at 55% 65%, rgba($primary-color, 0.15) 0%, transparent 65%);
+    pointer-events: none;
+    content: "";
+    inset: 0;
   }
 }
 
@@ -45,7 +44,7 @@
 
   p {
     font-size: 2rem;
-    margin-block: 3.5rem;
+    margin-block-end: 3.5rem;
   }
 
   ul {
@@ -54,12 +53,11 @@
     flex-wrap: wrap;
     font-size: 1.6rem;
     gap: 2.5rem;
-    max-height: 33rem;
 
     li {
+      transition: ease-in 0.15s;
       color: $neutral-text-color;
       cursor: pointer;
-      transition: ease-in 0.15s;
 
       &:hover {
         color: $dark-text-color;
@@ -77,11 +75,12 @@
 
     ul {
       column-gap: 10rem;
+      max-height: 33rem;
     }
   }
 }
 
-#social-media {
+.social-media {
   @include flex-center(row, space-between);
 
   flex-wrap: wrap;
@@ -93,5 +92,9 @@
     @include flex-center;
 
     gap: 1.5rem;
+  }
+
+  span {
+    color: $dark-text-color;
   }
 }

@@ -1,0 +1,45 @@
+.form {
+  @include flex-center;
+
+  flex-wrap: wrap;
+  max-width: 40rem;
+  padding: 4rem 3rem;
+  border: $dark-border-button;
+  border-radius: 1rem;
+  background-color: tomato;
+  background-color: $dark-bg-card;
+  gap: 1.5rem;
+
+  .form__title {
+    align-self: flex-start;
+    margin: 0 auto 0.5rem 0;
+    color: $dark-text-color;
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+
+  p {
+    @include flex-center;
+
+    flex-basis: 100%;
+  }
+
+  .btn[type="submit"] {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .email-input {
+    all: unset;
+    flex: 1;
+    padding: 1rem 2.5rem;
+    border: $dark-border-button;
+    border-radius: 5rem;
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+  }
+}
