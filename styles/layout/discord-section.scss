@@ -1,0 +1,47 @@
+.section.discord-section {
+  @include flex-center(column);
+
+  position: relative;
+  width: 100%;
+  max-width: 100rem;
+  height: 45rem;
+  margin: 7rem auto;
+  border: $dark-border-button;
+  border-radius: 1rem;
+  background-image: url("../../assets/discord/bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  gap: 1.5rem;
+
+  hgroup {
+    @include flex-center(column);
+
+    gap: 1.5rem;
+    margin-block: 1.5rem;
+    max-width: 53rem;
+    text-align: center;
+  }
+
+  .discord__title {
+    font-size: 4rem;
+    color: $dark-text-color;
+  }
+
+  .discord__image {
+    order: -1;
+  }
+
+  .btn {
+    background-color: #5865f2;
+  }
+
+  &::after {
+    position: absolute;
+    background: radial-gradient(circle at 90% 22%, rgba($primary-color, 0.12) 10%, transparent 40%),
+      radial-gradient(circle at 10% 22%, rgba($secondary-color, 0.12) 10%, transparent 40%),
+      radial-gradient(circle at 50% 95%, rgba(#5865f2, 0.2) 10%, transparent 35%);
+    pointer-events: none;
+    content: "";
+    inset: 0;
+  }
+}
