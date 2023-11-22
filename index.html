@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.cdnfonts.com/css/satoshi?styles=135002,135009&display=swap"
-      rel="stylesheet"
-    >
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
     <!-- SEO -->
     <meta 
       name="description" 
@@ -35,37 +33,41 @@
   <body>
     <!-- Navbar -->
     <header class="header">
-      <nav class="nav collapsible">
-        <a href='/' class="nav__brand">
-          <img src='assets/logo.svg' alt='logo'>
+      <nav class="nav collapsible" aria-label="Navigation bar">
+        <a href="/" class="nav__brand">
+          <img src="assets/logo.png" alt="logo" height="40" width="158">
         </a>        
-        <svg class="icon nav__toggler">
+        <svg class="icon nav__toggler" aria-label="Toggle menu">
           <use xlink:href="assets/icons/sprite.svg#menu"></use>
         </svg>
         <menu class="nav__menu collapsible__content">
-          <li><a href='#' class='link active'>Home</a></li>
-          <li><a href='#' class='link'>About</a></li>
-          <li><a href='#' class='link'>Features</a></li>
+          <li><a href="#" class="link active">Home</a></li>
+          <li><a href="#" class="link">About</a></li>
+          <li><a href="#" class="link">Features</a></li>
         </menu>
       </nav>
     </header>
 
     <main>
       <!-- Hero Block -->
-      <section class="section hero-section full-bleed">
+      <section class="section hero-section full-bleed" aria-label="Hero Section">
         <hgroup>
           <h1>A CRM dashboard for engineering teams</h1>
-          <p class='subtitle--large'>
+          <p class="subtitle--large">
             Lorem ipsum dolor sit amet consectetur. Gravida convallis orci
             ultrices non. Ultricies tempor at ut cursus mi. Aliquam sed amet
             vitae orci ac penatibus consectetur.
           </p>
         </hgroup>
 
-        <button type="button" class="btn btn-primary">Get a demo</button>
-        <button type="button" class="btn btn-outline">View pricing</button>
+        <button type="button" class="btn btn-primary" aria-label="Get a demo">
+          Get a demo
+        </button>
+        <button type="button" class="btn btn-outline" aria-label="View pricing">
+          View pricing
+        </button>
 
-        <picture>
+        <picture aria-hidden="true">
           <source
             media="(max-width: 767px)"
             sizes="(max-width: 513px) 100vw, 513px"
@@ -97,23 +99,23 @@
               assets/hero_hvf4nj_c_scale,w_808.png 808w
             "
             src="assets/hero_hvf4nj_c_scale,w_808.png"
-            alt=""
+            alt="dashboard"
           >
         </picture>
       </section>
 
       <!-- Media Block -->
-      <section class="section media-section">
+      <section class="section media-section" aria-label="Media Section">
         <hgroup>
           <h2>Powerful features to help you manage all your leads</h2>
-          <p class='subtitle'>
+          <p class="subtitle">
             Ipsum dolor sit amet consectetur. Aliquam elementum elementum in
             ultrices. Dui maecenas ut eros turpis ultrices metus morbi aliquet
             vel.
           </p>
         </hgroup>
 
-        <article class="card">
+        <article class="card" aria-label="User Information">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#user"></use>
@@ -126,7 +128,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" aria-label="Deal tracking">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#deal"></use>
@@ -139,7 +141,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" aria-label="Pipeline oversight">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#pipeline"></use>
@@ -152,7 +154,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" aria-label="Reporting panel">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#report"></use>
@@ -165,7 +167,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" aria-label="Meeting scheduler">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#meeting"></use>
@@ -178,7 +180,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" aria-label="Email tracking">
           <header>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#email"></use>
@@ -193,9 +195,9 @@
       </section>
 
       <!-- Showcase Block -->
-      <section class="section showcase-section">
+      <section class="section showcase-section" aria-label="Showcase Section">
         <h2>Essential apps that protect your</h2>
-        <h3>
+        <h3 aria-label="Featured apps">
           <span>
             <svg class="icon">
               <use xlink:href="assets/icons/sprite.svg#mail"></use>
@@ -222,20 +224,26 @@
           </span>
         </h3>
 
-        <article class="card article-invitation">
+        <article class="card article-invitation" aria-label="End-to-end encrypted inbox and messages">
           <header>
             <hgroup>
               <h4 class="feature__title">End-to-end encrypted inbox and messages</h4>
-              <p class='subtitle'>
+              <p class="subtitle">
                 Lorem ipsum dolor sit amet consectetur. Proin dignissim tortor
                 mauris viverra sed volutpat mauris. Amet nisi amet commodo
                 adipiscing ut imperdiet nunc.
               </p>
             </hgroup>
-            <button type="button" class="btn btn-outline">Learn more</button>
+            <button 
+              type="button"
+              class="btn btn-outline"
+              aria-label="Learn more"
+            >
+              Learn more
+            </button>
           </header>
 
-          <picture>
+          <picture aria-hidden="true">
             <source
               media="(max-width: 767px)"
               sizes="(max-width: 515px) 100vw, 515px"
@@ -259,13 +267,14 @@
               srcset="assets/invitation_a7e1bv_c_scale,w_515.png 515w"
               src="assets/invitation_a7e1bv_c_scale,w_515.png"
               alt="invitation"
+              loading="lazy"
             >
           </picture>
         </article>
 
         <div>
-          <article class="card article-mobile">
-            <picture>
+          <article class="card article-mobile" aria-label="Mobile Applications">
+            <picture aria-hidden="true">
               <source
                 media="(max-width: 767px)"
                 sizes="(max-width: 272px) 100vw, 272px"
@@ -286,16 +295,17 @@
                 srcset="assets/phone_dpltam_c_scale,w_272.png 272w"
                 src="assets/phone_dpltam_c_scale,w_272.png"
                 alt="phone"
+                loading="lazy"
               >
             </picture>
             <h4 class="feature__title">Mobile applications</h4>
-            <p class='subtitle'>
+            <p class="subtitle">
               Lorem ipsum dolor sit amet consectetur. Viverra sed dignissim
               risus aliquet condimentum. Vulputate varius feugiat egestas congue
             </p>
           </article>
-          <article class="card article-upload">
-            <picture>
+          <article class="card article-upload" aria-label="Upload, Share, and Preview any File">
+            <picture aria-hidden="true">
               <source
                 media="(max-width: 767px)"
                 sizes="(max-width: 580px) 100vw, 580px"
@@ -318,35 +328,38 @@
                 srcset="assets/table_nzqlmn_c_scale,w_580.png 580w"
                 src="assets/table_nzqlmn_c_scale,w_580.png"
                 alt="table"
+                loading="lazy"
               >
             </picture>
             <h4 class="feature__title">Upload, share, and preview any file</h4>
-            <p class='subtitle'>
+            <p class="subtitle">
               Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula
               massa netus nulla ultricies purus.
             </p>
           </article>
         </div>
 
-        <button type="button" class="btn btn-primary">Get a Started</button>
-        <button type="button" class="btn btn-outline">
+        <button type="button" class="btn btn-primary" aria-label="Get a Started">
+          Get a Started
+        </button>
+        <button type="button" class="btn btn-outline" aria-label="Browse all feature">
           Browse all feature
         </button>
       </section>
 
       <!-- Features Block -->
-      <div class='features-container'>
-        <article class='features-article'>
+      <div class="features-container">
+        <article class="features-article" aria-label="Transparent, audited, and open source">
           <hgroup>
             <h3>Transparent, audited, &open source</h3>
-            <p class='subtitle'>
+            <p class="subtitle">
               Lorem ipsum dolor sit amet consectetur. 
               Nulla quisque scelerisque eget quis. 
               Eu amet amet eu interdum.
               <button type="button" class="btn btn-outline">Browse all feature</button>
             </p>
           </hgroup>
-          <picture>
+          <picture aria-hidden="true">
             <source
               media="(max-width: 767px)"
               sizes="(max-width: 528px) 100vw, 528px"
@@ -369,11 +382,12 @@
               srcset="assets/code_bx1hhr_c_scale,w_528.png 528w"
               src="assets/code_bx1hhr_c_scale,w_528.png"
               alt="code"
+              loading="lazy"
             >
           </picture>
         </article>
-        <div class='product-container'>
-          <article class='card'>
+        <div class="product-container">
+          <article class="card" aria-label="Product Mail">
             <hgroup>
               <h4 class="card__title">Product Mail</h4>
               <p class="subtitle">
@@ -381,7 +395,7 @@
                 Malesuada maecenas ac bibendum consectetur.
               </p>
             </hgroup>
-            <picture class="product-mail">
+            <picture class="product-mail" aria-hidden="true">
               <source
                 media="(max-width: 767px)"
                 sizes="(max-width: 417px) 100vw, 417px"
@@ -405,11 +419,12 @@
                 assets/product-mail_xxx3k0_c_scale,w_417.png 417w"
                 src="assets/product-mail_xxx3k0_c_scale,w_417.png"
                 alt="product-mail"
+                loading="lazy"
               >
             </picture>
           </article>
 
-          <article class='card'>
+          <article class="card" aria-label="Product UI">
             <hgroup>
               <h4 class="card__title">Product UI</h4>
               <p class="subtitle">
@@ -417,7 +432,7 @@
                 Malesuada maecenas ac bibendum consectetur.
               </p>
             </hgroup>
-            <picture class="product-ui">
+            <picture class="product-ui" aria-hidden="true">
               <source
                 media="(max-width: 767px)"
                 sizes="(max-width: 488px) 100vw, 488px"
@@ -440,6 +455,7 @@
                 srcset="assets/product-ui_mpxjzj_c_scale,w_488.png 488w"
                 src="assets/product-ui_mpxjzj_c_scale,w_488.png"
                 alt="product-ui"
+                loading="lazy"
               >
             </picture>
           </article>
@@ -447,7 +463,7 @@
       </div>
 
       <!-- Testimonial Block -->
-      <section class="section testimonial-section full-bleed">
+      <section class="section testimonial-section full-bleed" aria-label="Testimonials Section">
         <hgroup>
           <h2>What our clients say</h2>
           <p class="subtitle">
@@ -534,7 +550,7 @@
       </section>
 
       <!-- Discord Block -->
-      <section class="section discord-section">
+      <section class="section discord-section" aria-label="Discord Section">
         <hgroup>
           <h3 class="discord__title">Join the community</h3>
           <p class="subtitle">
@@ -543,19 +559,21 @@
           </p>
         </hgroup>
         <img
-          src="assets/discord/logo.svg"
+          src="assets/discord/logo.png"
           alt="discord logo"
           class="discord__image"
         >
-        <button type="button" class="btn btn-primary">Join Discord</button>
+        <button type="button" class="btn btn-primary" aria-label="Join Discord">
+          Join Discord
+        </button>
       </section>
 
       <!-- Product Block -->
-      <section class="section product-section">
+      <section class="section product-section" aria-label="Products Section">
         <h2>Product in the news</h2>
         <button type="button" class="btn btn-primary">Browse all news</button>
         <div class="products-container">
-          <article class="card product-card">
+          <article class="card product-card" aria-label="Product Mail">
             <hgroup>
               <h3 class="card__title">Product Mail is taking on Gmail by betting on privacy</h3>
               <p class="subtitle--small">
@@ -571,7 +589,7 @@
               <a href="#" class="link-arrow">Read More</a>
             </footer>
           </article>
-          <article class="card product-card">
+          <article class="card product-card" aria-label="Sign Out Of Google Workspace Forever">
             <hgroup>
               <h3 class="card__title">Wants You To Sign Out Of Google Workspace Forever</h3>
               <p class="subtitle--small">
@@ -587,7 +605,7 @@
               <a href="#" class="link-arrow">Read More</a>
             </footer>
           </article>
-          <article class="card product-card">
+          <article class="card product-card" aria-label="The Best Email Encryption">
             <hgroup>
               <h3 class="card__title">The Best Email Encryption Services for 2023</h3>
               <p class="subtitle--small">
@@ -608,21 +626,29 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" aria-label="Site Footer">
       <div class="footer-container">
         <div class="form-container">
-          <img src="assets/logo.svg" alt="logo">
+          <img src="assets/logo.png" alt="logo" height="40" width="158">
 
-          <form action="/" method="post" class="form">
+          <form action="/" method="post" class="form" aria-label="Newsletter Subscription Form">
             <h3 class="form__title">Subscribe to our newsletter</h3>
             <p>
-              <input type="text" name=" email" class="email-input" placeholder="Enter your email">
+              <input
+                type="text"
+                name=" email"
+                class="email-input"
+                placeholder="Enter your email"
+                aria-label="Email Input"
+              >
             </p>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe Button">
+              Subscribe
+            </button>
           </form>
         </div>
 
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer Navigation">
           <div>
             <p>Pages</p>
             <ul>

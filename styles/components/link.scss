@@ -4,12 +4,13 @@
 
   &::after {
     position: absolute;
-    margin-left: 5px;
     transition: margin 0.15s;
+    font-size: 2.2rem;
+    line-height: 1rem;
     content: "→";
   }
 
   &:hover::after {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
