@@ -1,5 +1,4 @@
-@import '../utils/variables';
-@import '../utils/mixins';
+@import "../utils/mixins";
 
 .card {
   background-color: $dark-bg-card;
@@ -17,7 +16,7 @@
       width: 5rem;
     }
 
-    h6 {
+    .card__title {
       margin-block: 2.8rem 1.2rem;
     }
   }

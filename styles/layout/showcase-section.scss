@@ -1,0 +1,156 @@
+.section.showcase-section {
+  text-align: center;
+
+  h3 {
+    margin-block-start: 1rem;
+
+    @media screen and (width >= 768px) {
+      margin-block-start: 2rem;
+    }
+
+    span {
+      white-space: nowrap;
+      margin-inline-start: 1.1rem;
+
+      svg {
+        width: clamp(2.5rem, (0.5rem + 3.5vw), 4rem);
+        height: clamp(2.5rem, (0.5rem + 3.5vw), 3.5rem);
+      }
+    }
+  }
+
+  > .btn {
+    margin: 0 1.5rem 1.5rem;
+  }
+}
+
+.card.article-invitation {
+  @include flex-center;
+
+  position: relative;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-block: 6rem 4rem;
+  gap: 0;
+
+  &::before {
+    position: absolute;
+    background: linear-gradient(
+      55deg,
+      rgba($primary-color, 0.1) 0%,
+      transparent 30%,
+      transparent 50%,
+      rgba($secondary-color, 0.15) 100%
+    );
+    pointer-events: none;
+    content: "";
+    inset: 0;
+  }
+
+  header,
+  picture {
+    text-align: center;
+    margin-block-start: 5rem;
+  }
+
+  picture {
+    max-width: 51.5rem;
+    max-height: 37.3rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .subtitle {
+    margin-block: 1.5rem 3.5rem;
+    max-width: 46.5rem;
+  }
+
+  @media screen and (width >= 1024px) {
+    flex-wrap: nowrap;
+    gap: 2.8rem;
+    height: 51.3rem;
+
+    header {
+      padding-inline: 5rem 4rem;
+      margin: 0;
+      text-align: left;
+    }
+
+    picture {
+      margin: 5rem 5rem 5rem 0;
+    }
+  }
+}
+
+.section.showcase-section div {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  margin-block-end: 6rem;
+
+  .article-mobile,
+  .article-upload {
+    @include flex-center(column, space-between);
+
+    position: relative;
+    height: 100%;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      background: radial-gradient(circle at 0% 100%, rgba($primary-color, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba($success-color, 0.12) 0%, transparent 40%);
+      pointer-events: none;
+      content: "";
+      inset: 0;
+    }
+  }
+
+  .article-mobile picture {
+    margin-block-end: 2rem;
+    max-width: 27.1rem;
+    max-height: 30.6rem;
+  }
+
+  @media screen and (width >= 1024px) {
+    grid-template-columns: minmax(auto, 49.6rem) 1fr;
+
+    .article-mobile,
+    .article-upload {
+      padding: 5rem;
+      text-align: left;
+
+      .feature__title {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  .article-upload {
+    padding-block-end: 0;
+
+    picture {
+      order: 2;
+      max-width: 58rem;
+      max-height: 39.3rem;
+      margin-block-start: auto;
+    }
+
+    &::after {
+      background: radial-gradient(circle at 0% 100%, rgba(#2d55fb, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba($primary-color, 0.15) 0%, transparent 30%);
+    }
+  }
+}
