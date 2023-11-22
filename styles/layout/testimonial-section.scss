@@ -1,0 +1,97 @@
+.section.testimonial-section {
+  @include flex-center(column, center, flex-start);
+
+  text-align: center;
+
+  hgroup {
+    align-self: center;
+    max-width: 64rem;
+
+    h2 {
+      margin-block-end: 2.4rem;
+    }
+  }
+
+  .buttons-container {
+    @include flex-center;
+
+    align-self: center;
+    gap: 1.5rem;
+  }
+}
+
+.testimonial-container {
+  @include flex-center;
+
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  gap: 7rem;
+  padding-block: 6rem 7rem;
+  padding-inline: 5rem;
+
+  @media screen and (width <= 1024px) {
+    justify-content: flex-start;
+  }
+
+  blockquote {
+    position: relative;
+    flex: 0 0 auto;
+    width: 34.5rem;
+    height: 100%;
+    padding: 2.5rem;
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+    overflow: visible;
+
+    header {
+      @include flex-center;
+
+      gap: 1rem;
+      margin-block-end: 2.5rem;
+
+      img {
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+
+      .icon {
+        width: 5.7rem;
+        height: 4.1rem;
+      }
+    }
+
+    .testimonial__author {
+      @include flex-center(row, space-between);
+
+      flex: 1;
+
+      p {
+        font-weight: bold;
+      }
+
+      small {
+        display: block;
+        color: $neutral-text-color;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-block-start: 0.75rem;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      right: -2.5rem;
+      bottom: -2.5rem;
+      width: 39.25rem;
+      height: 11rem;
+      border: $dark-border-button;
+      border-radius: 10px;
+      background: radial-gradient(circle at 15% 50%, rgba($primary-color, 0.2) 0%, transparent 80%),
+        radial-gradient(circle at 50% 50%, rgba(#a8e9ff, 0.2) 0%, transparent 70%),
+        radial-gradient(circle at 85% 50%, rgba(#c6ffe0, 0.25) 0%, transparent 70%);
+      content: "";
+      z-index: -1;
+    }
+  }
+}
