@@ -1,19 +1,19 @@
 @import "../utils/mixins";
 
 .card {
-  background-color: $dark-bg-card;
-  border: $dark-border-button;
-  border-radius: 4px;
   flex: 1;
   min-width: 30rem;
-  overflow: hidden;
   padding: 3rem 4rem;
+  border: $dark-border-button;
+  border-radius: 4px;
+  background-color: $dark-bg-card;
   text-align: left;
+  overflow: hidden;
 
   header {
     img {
-      height: 4.5rem;
       width: 5rem;
+      height: 4.5rem;
     }
 
     .card__title {

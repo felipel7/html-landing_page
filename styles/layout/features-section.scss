@@ -1,0 +1,95 @@
+.features-container {
+  margin: 7rem $padding-inline-default;
+  padding: 4rem 2rem;
+  border: $dark-border-button;
+  border-radius: 10px;
+  background-color: $dark-bg-card;
+
+  img {
+    width: 100%;
+  }
+
+  .features-article {
+    @include flex-center;
+
+    flex-wrap: wrap;
+    gap: 5rem;
+    text-align: center;
+
+    .subtitle {
+      margin-block-start: 1.5rem;
+    }
+
+    .btn {
+      display: block;
+      margin: 3rem auto 0;
+    }
+
+    picture {
+      max-width: 52.5rem;
+      max-height: 40rem;
+    }
+  }
+
+  @media screen and (width >= 1024px) {
+    padding: 5rem;
+
+    .features-article {
+      justify-content: space-between;
+      text-align: left;
+
+      hgroup {
+        flex: 1;
+        max-width: 50rem;
+      }
+
+      .btn {
+        margin-inline: initial;
+      }
+    }
+  }
+
+  .product-container {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-block-start: 4rem;
+
+    .card {
+      @include flex-center(column);
+
+      max-width: 54rem;
+      padding: 3rem 2rem 0;
+      border-radius: 10px;
+      background-color: $dark-bg-main;
+      gap: 3.2rem;
+    }
+
+    @media screen and (width >= 1024px) {
+      grid-template-columns: 1fr 1fr;
+
+      .card {
+        padding: 3rem 3rem 0;
+      }
+    }
+
+    .subtitle {
+      margin-block-start: 1rem;
+    }
+
+    .product-mail,
+    .product-ui {
+      max-height: 21.1rem;
+      margin-block-start: auto;
+    }
+
+    .product-mail {
+      max-width: 41.7rem;
+    }
+
+    .product-ui {
+      max-width: 48.7rem;
+    }
+  }
+}
